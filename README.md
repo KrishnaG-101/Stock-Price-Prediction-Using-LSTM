@@ -34,8 +34,8 @@ This project utilizes the following key libraries:
 
 1.  **Clone the Repository**:
     ```bash
-    git clone [https://github.com/YourUsername/Your-Repo-Name.git](https://github.com/YourUsername/Your-Repo-Name.git)
-    cd Your-Repo-Name
+    git clone https://github.com/KrishnaG-101/Stock-Price-Prediction-Using-LSTM.git
+    cd Stock-Price-Prediction-Using-LSTM
     ```
 
 2.  **Install Dependencies**:
@@ -45,11 +45,7 @@ This project utilizes the following key libraries:
     ```
 
 3.  **Run the Project**:
-    Execute the main script to run the entire process, from data fetching to visualization.
-    ```bash
-    python your_main_script.py
-    ```
-    *Replace `your_main_script.py` with the actual name of your Python file.*
+    Execute the main notebook to run the entire process, from data fetching to visualization.
 
 ---
 
@@ -57,9 +53,11 @@ This project utilizes the following key libraries:
 
 Your project should be structured somewhat like this:
 .
-├── your_main_script.py       # Main script containing the model and logic
-├── README.md                 # This file
-└── data/                     # Optional: Directory for storing datasets
+├── AAPL_stock_price.png
+├── AAPL_stock_price_prediction.png
+├── LICENSE
+├── README.md
+└── Stock_Price_Prediction_Using_LSTM.ipynb
 
 ---
 
@@ -76,10 +74,7 @@ Your project should be structured somewhat like this:
 
 ## Results
 
-*Include a sample plot here, if you have one.*
-
-![Actual vs Predicted Stock Prices](plot.png)
-*This plot shows the model's predictions (in red) against the actual stock prices (in blue) for the test data.*
+![Actual vs Predicted Stock Prices](AAPL_stock_price_prediction.png)
 
 ---
 
@@ -89,12 +84,6 @@ Your project should be structured somewhat like this:
 * Incorporate other features like Volume, High, and Low prices into the model's input.
 * Hyperparameter tuning (e.g., learning rate, number of epochs, sequence length).
 * Implement real-time stock data fetching and prediction.
-
----
-
-## Contributing
-
-Feel free to fork the repository and contribute. Pull requests are welcome!
 
 ---
 
