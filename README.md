@@ -51,13 +51,14 @@ This project utilizes the following key libraries:
 
 ## Project Structure
 
-Your project should be structured somewhat like this:
+```bash
 .
-├── AAPL_stock_price.png
-├── AAPL_stock_price_prediction.png
-├── LICENSE
-├── README.md
-└── Stock_Price_Prediction_Using_LSTM.ipynb
+├── AAPL_stock_price.png                       #AAPL stock price from January 1st 2020 till August 26th 2025
+├── AAPL_stock_price_prediction.png            #Plot comparing AAPL actual stock price and predicted price by the model
+├── LICENSE                                    #MIT License for the project
+├── README.md                                  #This file
+└── Stock_Price_Prediction_Using_LSTM.ipynb    #Project Notebook file
+```
 
 ---
 
@@ -66,8 +67,8 @@ Your project should be structured somewhat like this:
 1.  **Data Ingestion**: The script first uses `yfinance` to download historical stock data (e.g., for **`AAPL`**, **`MSFT`**, etc.).
 2.  **Data Preprocessing**: The **`Close`** price is extracted and then scaled using `StandardScaler`. This transforms the data to have a mean of 0 and a standard deviation of 1.
 3.  **Sequence Creation**: The scaled data is then converted into sequential input-output pairs suitable for an LSTM, where a sequence of previous prices is used to predict the next price.
-4.  **Model Definition**: A `PredictionModel` class is created, inheriting from `torch.nn.Module`, to define the LSTM layers and a final linear layer for output.
-5.  **Training**: The model is trained on the training dataset using a specified number of epochs, with a loss function (e.g., Mean Squared Error) and an optimizer (e.g., Adam).
+4.  **Model Definition**: A `PredictionModel` class is created, inheriting from `torch.nn.Module`, to define the LSTM layers and a final layer for output.
+5.  **Training**: The model is trained on the training dataset using a specified number of epochs, with a loss function (Root Mean Squared Error) and an optimizer (Adam).
 6.  **Prediction & Visualization**: After training, the model predicts stock prices on the test dataset. The results are then un-scaled and plotted against the actual prices to visually assess the model's performance.
 
 ---
