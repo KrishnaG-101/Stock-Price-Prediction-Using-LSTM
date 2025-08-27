@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a practice-based implementation of a **Stock Price Prediction** model using a **Long Short-Term Memory (LSTM)** neural network. The goal of this project is to apply fundamental data science, machine learning, and financial data analysis skills to forecast stock prices. The model is built using **PyTorch** and leverages various Python libraries for data manipulation, visualization, and preprocessing.
+This project is implementation of a **Stock Price Prediction** model using a **Long Short-Term Memory (LSTM)** neural network. The goal of this project is to apply fundamental data science, machine learning, and financial data analysis skills to forecast stock prices. The model is built using **PyTorch** and leverages various Python libraries for data manipulation, visualization, and preprocessing.
 
 ---
 
